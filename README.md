@@ -8,3 +8,11 @@ About the history command, it displays an ordered list of all input commands tha
 Implemented an additional flag to the history command, which is the -sbu (SortByUsage). When a command input is history -sbu, the program  sorts the history commands by execution duration (end time – start time) in descending order. This means when the shell program executes any commands, it records the command execution time and store both the executed commands and its time information.
 
 The other built-in command that the shell supports is exit, i.e. if the user inputs "exit" the shell program will exit.
+
+Create Object on Linux as follows: -
+
+g++ -o tinyshell tinyshell.cpp
+
+Execute on Linux as follows: -
+
+./tinyshell
