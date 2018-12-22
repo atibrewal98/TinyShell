@@ -152,13 +152,13 @@ int main()
 	    {
 		comms cmd;
 		cmd.commands = command;
-		cmd.time =  (double)(clock() - startTime);
-	    	com.push_back(cmd);
+		startTime = clock() - startTime;
+		cmd.time =  ((double)startTime/CLOCKS_PER_SEC);
+	    com.push_back(cmd);
 	    }
-        }
+    }
 
         cout << "tinyshell> ";
     }
     exit(0);
   }
-
